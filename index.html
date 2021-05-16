@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Padauk:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- seo -->
+    <meta name="description" content="Random Password Generator tool,and strong password include symbol, number , alphabets">
+    <meta name="keywords" content="password generator, password manager, password, google password manager, google password, random password generator, strong password generator, chrome password manager, Password Generator">
+    <meta name="author" content="Venkatesh">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div class="password-container">
+            <input type="text" id="password" >
+            <span class="clipboard" id="clipboard"><i class="far fa-clipboard"></i></span>
+        </div>
+        <div class="password-input-container">
+            <div>
+                <label for="length">Password Length</label>
+                <input type="number" name="" id="length" min="4" max="30">
+            </div>
+            <div>
+                <label for="uppercase">Include Uppercase Letter</label>
+                <input type="checkbox" name="" id="uppercase" min="4" max="30">
+            </div>
+            <div>
+                <label for="lowercase">Include Lowercase Letter</label>
+                <input type="checkbox" name="" id="lowercase" min="4" max="30">
+            </div>
+            <div>
+                <label for="number">Include Numbers</label>
+                <input type="checkbox" name="" id="number" min="4" max="30">
+            </div>
+            <div>
+                <label for="symbol">Include Symbols</label>
+                <input type="checkbox" name="" id="symbol" min="4" max="30">
+            </div>
+            <button class="generate" id="generate">Generate Password</button>
+        </div>
+    </div>
+    <script src="/app.js"></script>
+</body>
+</html>
